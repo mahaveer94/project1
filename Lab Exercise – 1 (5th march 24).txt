@@ -1,0 +1,162 @@
+
+### Q1: Write a Python program which accept the radius of a circle from the user and compute 
+the area.
+PROGRAM:
+import math
+var=float(input("Enter the radius of circle:"))
+area=math.pi* var**2
+print (area)
+
+OUTPUT:
+C:\Users\243597\PycharmProjects\pythonProject\.venv\Scripts\python.exe C:\Users\243597\PycharmProjects\pythonProject\Day1.py 
+Enter the radius of circle:5
+78.53981633974483
+
+### Q2: Temperature of a city in Fahrenheit degrees is input through the keyboard. Write a 
+program to convert this temperature into Centigrade degrees. 
+
+PROGRAM:
+a=int(input("Enter the fahrenheit value: "))
+celsius = ( a- 32) * 5/9
+print("The celsius value :",celsius)
+
+OUTPUT:
+C:\Users\243597\PycharmProjects\pythonProject\.venv\Scripts\python.exe C:\Users\243597\PycharmProjects\pythonProject\Day1.py 
+Enter the fahrenheit value: 98
+The celsius value : 36.666666666666664
+
+Process finished with exit code 0
+
+###Q3: Write a Python Program to make a simple calculator that can add, subtract, multiply and 
+divide.
+
+PROGRAM:
+x=float(input("Enter the number:"))
+y=float(input("Enter the number:"))
+Add=x+y
+Sub=x-y
+Mul=x*y
+Div=x/y
+print(Add)
+print(Sub)
+print(Mul)
+print(Div)
+
+OUTPUT:
+C:\Users\243597\PycharmProjects\pythonProject\.venv\Scripts\python.exe C:\Users\243597\PycharmProjects\pythonProject\Practice11.py 
+Enter the number:5.5
+Enter the number:8.9
+14.4
+-3.4000000000000004
+48.95
+0.6179775280898876
+
+###Q4: Write a Python Program to calculate the square root.
+
+PROGRAM:
+import math
+var=int(input("Enter the number:"))
+square_root = math.sqrt(var)
+print(square_root)
+
+OUTPUT:
+C:\Users\243597\PycharmProjects\pythonProject\.venv\Scripts\python.exe C:\Users\243597\PycharmProjects\pythonProject\Day1.py 
+Enter the number:25
+5.0
+
+### Q5: Write a Python Program to Solve the quadratic equation ax**2 + bx + c = 0
+ # Coeffients a, b and c are provided by the user.
+ 
+PROGRAM:
+import cmath
+a=int(input("Enter the value of a:"))
+b=int(input("Enter the value of b:"))
+c=int(input("Enter the value of c:"))
+x1 = (-b + cmath.sqrt(b**2 - 4*a*c)) / (2*a)
+x2 = (-b - cmath.sqrt(b**2 - 4*a*c)) / (2*a)
+print("First root of Quadratic equation :",x1)
+print("Secand root of Quadratic equation :",x2)
+
+
+OUTPUT:
+C:\Users\243597\PycharmProjects\pythonProject\.venv\Scripts\python.exe C:\Users\243597\PycharmProjects\pythonProject\Day1.py 
+Enter the value of a:4
+Enter the value of b:6
+Enter the value of c:9
+First root of Quadratic equation : (-0.75+1.299038105676658j)
+Secand root of Quadratic equation : (-0.75-1.299038105676658j)
+
+
+### Q6: Write a Python Program to find the area of triangle
+ # Three sides of the triangle a, b and c are provided by the user.
+ 
+PROGRAM:
+import math
+a = float(input("Enter the length of side a: "))
+b = float(input("Enter the length of side b: "))
+c = float(input("Enter the length of side c: "))
+s = (a + b + c) / 2
+area = math.sqrt(s * (s - a) * (s - b) * (s - c))
+print("Area of traingle:",area)
+
+OUTPUT:
+C:\Users\243597\PycharmProjects\pythonProject\.venv\Scripts\python.exe C:\Users\243597\PycharmProjects\pythonProject\Day1.py 
+Enter the length of side a: 2
+Enter the length of side b: 6
+Enter the length of side c: 7
+Area of traingle: 5.562148865321747
+
+### Q7: Write a Python program to print the following string in a specific format.
+
+PROGRAM:
+a="""Twinkle,twinkle,little star, 
+   How I Wonder what you are!
+       Up above the world so high,
+       Like a diamond in the sky.
+ Twinkle,twinkle,little star, 
+   How I Wonder what you are."""
+print(a)
+
+OUTPUT:
+C:\Users\243597\PycharmProjects\pythonProject\.venv\Scripts\python.exe C:\Users\243597\PycharmProjects\pythonProject\Day1.py 
+Twinkle,twinkle,little star, 
+   How I Wonder what you are!
+       Up above the world so high,
+       Like a diamond in the sky.
+ Twinkle,twinkle,little star, 
+   How I Wonder what you are.
+
+
+### Q8: Write a Python program to display your details like name, age, address in three different 
+lines.
+
+PROGRAM:
+name=input("Enter the name:")
+age=int(input("Enter the Age:"))
+address=input("Enter the Address:")
+
+OUTPUT:
+C:\Users\243597\PycharmProjects\pythonProject\.venv\Scripts\python.exe C:\Users\243597\PycharmProjects\pythonProject\Practice11.py 
+Enter the name:Mahaveer
+Enter the Age:29
+Enter the Address:Shivaji Nagar Tumsar
+
+Process finished with exit code 0
+
+### Q9: If a five-digit number is input through the keyboard, write a program to calculate the sum 
+of its digits without using any loop. (Hint: Use the modulus operator ‘%’).
+
+PROGRAM:
+number = int(input("Enter a five-digit number: "))
+a1=number % 10
+a2=(number//10)%10
+a3=(number//100)%10
+a4=(number//1000)%10
+a5=(number//10000)%10
+sum=a1+a2+a3+a4+a5
+print("Sum of Digit of five digit number:",sum)
+
+OUTPUT:
+C:\Users\243597\PycharmProjects\pythonProject\.venv\Scripts\python.exe C:\Users\243597\PycharmProjects\pythonProject\Day1.py 
+Enter a five-digit number: 12345
+Sum of Digit of five digit number: 15
